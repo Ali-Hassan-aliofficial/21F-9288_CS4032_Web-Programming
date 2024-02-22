@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+</head>
+<body>
+  <script>
+    // Function to print the multiplication table
+    function printMultiplicationTable(number) {
+      document.write("<h2>Multiplication Table for " + number + "</h2>");
+      document.write("<table border='1'>");
+      document.write("<tr><th>Multiplier</th><th>Result</th></tr>");
+
+      for (let i = 1; i <= 10; i++) {
+        let result = number * i;
+        document.write("<tr><td>" + number + " * " + i + "</td><td>" + result + "</td></tr>");
+      }
+
+      document.write("</table>");
+    }
+
+    // Prompt the user for a number
+    let inputNumber = prompt("Enter a number to get its multiplication table:");
+
+    // Convert the input to a number
+    let number = parseInt(inputNumber);
+
+    // Check if the input is a valid number
+    if (!isNaN(number)) {
+      printMultiplicationTable(number);
+    } else {
+      document.write("<p>Invalid input. Please enter a valid number.</p>");
+    }
+  </script>
+</body>
+</html>

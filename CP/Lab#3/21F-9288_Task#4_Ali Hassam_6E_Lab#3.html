@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Month Days</title>
+</head>
+<body>
+  <script>
+    // Function to get the number of days in a month
+    function getDaysInMonth(monthName) {
+      // Define a map of month names to their corresponding number of days
+      const daysInMonth = {
+        "Jan": 31,
+        "Feb": 28, // Assuming non-leap year for simplicity
+        "Mar": 31,
+        "Apr": 30,
+        "May": 31,
+        "Jun": 30,
+        "Jul": 31,
+        "Aug": 31,
+        "Sep": 30,
+        "Oct": 31,
+        "Nov": 30,
+        "Dec": 31
+      };
+
+      // Return the number of days for the given month name, or -1 if not found
+      return daysInMonth[monthName] || -1;
+    }
+
+    // Prompt the user for the month name
+    let monthName = prompt("Enter the name of the month (e.g., Jan, Feb):");
+
+    // Get the number of days in the entered month
+    const days = getDaysInMonth(monthName);
+
+    // Display the result
+    if (days !== -1) {
+      alert(`Number of days in ${monthName}: ${days}`);
+    } else {
+      alert("Invalid month name entered.");
+    }
+  </script>
+</body>
+</html>

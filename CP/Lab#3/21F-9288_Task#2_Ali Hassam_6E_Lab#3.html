@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Buttons</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <button class="btn btn-basic" onclick="displayMessage('Basic')">Basic</button>
+    <button class="btn btn-default" onclick="displayMessage('Default')">Default</button>
+    <button class="btn btn-primary" onclick="displayMessage('Primary')">Primary</button>
+    <button class="btn btn-success" onclick="displayMessage('Success')">Success</button>
+    <button class="btn btn-info" onclick="displayMessage('Info')">Info</button>
+    <button class="btn btn-warning" onclick="displayMessage('Warning')">Warning</button>
+    <button class="btn btn-danger" onclick="displayMessage('Danger')">Danger</button>
+    <button class="btn btn-link" onclick="displayMessage('Link')">Link</button>
+  </div>
+
+  <script>
+    function displayMessage(message) {
+      alert("Button clicked: " + message);
+    }
+  </script>
+</body>
+</html>
