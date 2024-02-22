@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+            background-color: #f4f4f4;
+        }
+        .calculator {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .display {
+            width: calc(100% - 22px);
+            height: 50px;
+            text-align: right;
+            padding: 5px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+        }
+        .button {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid black;
+            font-size: larger;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display"></div>
+        <div class="button-row">
+            <input class="button" value="7">
+            <input class="button" value="8">
+            <input class="button" value="9">
+            <input class="button" value="/">
+        </div>
+        <div class="button-row">
+            <input class="button" value="4">
+            <input class="button" value="5">
+            <input class="button" value="6">
+            <input class="button" value="*">
+        </div>
+        <div class="button-row">
+            <input class="button" value="1">
+            <input class="button" value="2">
+            <input class="button" value="3">
+            <input class="button" value="-">
+        </div>
+        <div class="button-row">
+            <input class="button" value="C">
+            <input class="button" value="0">
+            <input class="button" value="=">
+            <input class="button" value="+">
+        </div>
+    </div>
+
+</body>
+</html>
