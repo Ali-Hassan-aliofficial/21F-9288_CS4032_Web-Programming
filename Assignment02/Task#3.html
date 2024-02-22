@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center py-5">
+            <h1>Welcome to our website!</h1>
+            <h3>Check out these laptops!</h3>
+            <button class="btn btn-primary">Learn more</button>
+        </header>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fuga repellat, quo, qui illum voluptatibus esse corporis aut quia deserunt voluptatem, consequatur. Voluptatum repellendus, recusandae aliquid nemo perspiciatis debitis, beatae minus.</p>
+                <img src="Laptops-940x700-130423.jpg" alt="Laptop 1" class="img-fluid mb-3">
+                <p>Description for Laptop 1.</p>
+            </div>
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fuga repellat, quo, qui illum voluptatibus esse corporis aut quia deserunt voluptatem, consequatur. Voluptatum repellendus, recusandae aliquid nemo perspiciatis debitis, beatae minus.</p>
+                <img src="Laptops-940x700-130423.jpg" alt="Laptop 2" class="img-fluid mb-3">
+                <p>Description for Laptop 2.</p>
+            </div>
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fuga repellat, quo, qui illum voluptatibus esse corporis aut quia deserunt voluptatem, consequatur. Voluptatum repellendus, recusandae aliquid nemo perspiciatis debitis, beatae minus.</p>
+                <img src="Laptops-940x700-130423.jpg" alt="Laptop 3" class="img-fluid mb-3">
+                <p>Description for Laptop 3.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function adjustLayout() {
+            const columns = document.querySelectorAll('.col-md-4');
+            if (window.innerWidth < 768) {
+                columns.forEach(column => {
+                    column.classList.remove('col-md-4');
+                    column.classList.add('col-12');
+                });
+            } else {
+                columns.forEach(column => {
+                    column.classList.remove('col-12');
+                    column.classList.add('col-md-4');
+                });
+            }
+        }
+
+        window.addEventListener('resize', adjustLayout);
+        adjustLayout(); // Call the function initially to set the layout
+    </script>
+</body>
+</html>
